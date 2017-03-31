@@ -62,6 +62,14 @@ body {
 	margin: 0;
 }
 
+body:before, body:after {
+  height:0px !important;
+}
+
+#page {
+  margin: 0;
+}
+
 article,
 aside,
 details,
@@ -106,7 +114,7 @@ abbr[title] {
 b,
 strong {
 	font-weight: 900;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.025em;
 }
 
 small {
@@ -476,7 +484,7 @@ html {
 }
 
 body {
-	background: #1a1a1a;
+	background: rgb(240,240,240);
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -1607,6 +1615,11 @@ blockquote:after,
 	overflow: hidden;
 }
 
+.site-branding.home {
+  margin-top: 0px;
+  margin-bottom: 5.25em;
+}
+
 .custom-logo-link {
 	display: block;
 }
@@ -1637,14 +1650,21 @@ blockquote:after,
 	margin-top: 0.608695652em;
 }
 
+.site-branding.home .site-description {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+
+}
 .site-description {
 	color: #686868;
 	display: none;
 	font-size: 13px;
-	font-size: 0.8125rem;
+	font-size: 0.9rem;
 	font-weight: 400;
 	line-height: 1.0769230769;
 	margin: 0.538461538em 0 0;
+	letter-spacing: 0.15em;
 }
 
 .menu-toggle {
@@ -1698,6 +1718,10 @@ blockquote:after,
 	opacity: 0.85;
 }
 
+.nothome_logo {
+  max-width: 500px;
+}
+
 /**
  * 11.2 - Posts and pages
  */
@@ -1723,6 +1747,10 @@ blockquote:after,
 	font-weight: 200;
 	line-height: 1.25;
 	margin-bottom: 1em;
+}
+
+h2.entry-title {
+  text-transform: none;
 }
 
 .entry-title a {
@@ -2210,7 +2238,7 @@ body.search-no-results .page-header {
 	border-top: 4px solid #1a1a1a;
 	font-family: "Source Sans Pro",  sans-serif;
 	font-size: 23px;
-	font-size: 1.4375rem;
+	font-size: 1.1875rem;
 	font-weight: 700;
 	line-height: 1.3125;
 	padding-top: 1.217391304em;
@@ -2244,6 +2272,13 @@ body.search-no-results .page-header {
 .comment-author {
 	color: #1a1a1a;
 	margin-bottom: 0.4375em;
+}
+
+.comment-author a.url {
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-weight: 500;
+  color: #686868;
+  font-size: 1rem;
 }
 
 .comment-author .avatar {
@@ -2307,6 +2342,16 @@ body.search-no-results .page-header {
 .comment-content li > ul,
 .comment-content li > ol {
 	margin-bottom: 0;
+}
+
+a.comment-reply-link {
+  color: #fff;
+  background: #e82d20;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  border: none;
+  border-radius: 0;
 }
 
 .comment-reply-link {

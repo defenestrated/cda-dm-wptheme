@@ -430,3 +430,18 @@ add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 // }
 
 // add_action('wp_enqueue_scripts', 'google_fonts');
+
+
+function spitup_logo () {
+    $food = '<a href="' .  esc_url( home_url( '/' ) ) . '" rel="home">';
+    $food .= '<img src="' . get_header_image() . '"'
+          . ' srcset="' .  esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id ) ) . '"'
+          . ' sizes="' .  esc_attr( $custom_header_sizes ). '"'
+          . ' width="' .  esc_attr( get_custom_header()->width ) . '"'
+          . ' height="' .  esc_attr( get_custom_header()->height ) . '"'
+          . ' alt="' .  esc_attr( get_bloginfo( 'name', 'display' ) ) . '">';
+    $food .= '</a>';
+
+    // $food = "<p>balls</p>";
+    return $food;
+}
