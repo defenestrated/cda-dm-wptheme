@@ -51,7 +51,7 @@
         <span class="cda-link">a project by <a href="www.newschool.edu/center-for-data-arts/">the center for data arts</a></span>
 				<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' ); ?></a> -->
         <span class="footer-sponsorship">sponsored by <a href="http://pressforward.org/" target="_blank">PressForward</a></span>
-        <a href="http://pressforward.org/" target="_blank"><img src="wp-content/themes/cda-main/assets/PFLogo_transparent.png" class="pf-logo"></a>
+        <a href="http://pressforward.org/" target="_blank"><img src=" <?php echo get_template_directory_uri() ?>/assets/PFLogo_transparent.png" class="pf-logo"></a>
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
 	</div><!-- .site-inner -->
