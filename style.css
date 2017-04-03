@@ -51,11 +51,15 @@ Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-backgr
  * Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
  */
 
+.wf-loading {
+  opacity: 0;
+}
 
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+  transition: opacity 1s;
 }
 
 body {
@@ -311,7 +315,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.75;
-	font-weight: 200;
+	font-weight: 300;
 	letter-spacing: 0.025em;
 }
 
@@ -1597,7 +1601,12 @@ blockquote:after,
 
 .site-header {
 	padding: 2.625em 7.6923%;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 4em;
 }
+
+header#masthead {}
 
 .site-header-main {
 	-webkit-align-items: center;
@@ -1617,6 +1626,8 @@ blockquote:after,
 	max-width: 100%;
 	min-width: 0;
 	overflow: hidden;
+	/* padding-bottom: 2em; */
+	/* border-bottom: 1px solid black; */
 }
 
 .site-branding.home {
@@ -1721,6 +1732,33 @@ blockquote:after,
 .header-image a:hover img,
 .header-image a:focus img {
 	opacity: 0.85;
+}
+
+h1.dm-text-logo {
+  font-family: "roboto";
+  font-weight: 100;
+  font-size: 8rem;
+  line-height: 7rem;
+  color: black;
+  text-transform: uppercase;
+  margin-left: -0.1em;
+  transition: color .5s;
+}
+
+h1.dm-text-logo:hover {
+  color: rgb(0,95,255);
+}
+
+h2.dm-subtitle {
+  padding-top: 0.5em;
+}
+
+h2.dm-subtitle a {
+  display: inline;
+  transition: color .35s;
+}
+h2.dm-subtitle a:hover {
+  color: rgb(0,95,255);
 }
 
 .nothome_logo {
@@ -2511,14 +2549,35 @@ a.comment-reply-link {
 	letter-spacing: -.1em;
 }
 
-img.pf-logo {
+.foot-sole {
+  margin: 20px 0;
+  margin-left: -23px;
+}
+
+.foot-sole a img {
   position: relative;
-    max-width: 300px;
-    display: block;
-    margin: 20px 0;
-    top: 0px;
-    left: 0px;
-    transition: left 0.2s ease-out;
+  padding-right: 4em;
+}
+.site-info .foot-sole a:hover {
+  text-decoration: none;
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+.footlogos.cda-logo {
+
+}
+.footlogos.tns-logo {
+  max-height: 110px;
+}
+.footlogos.pf-logo {
+  max-width: 300px;
+}
+
+img.pf-logo {
+  top: 0px;
+  left: 0px;
+  transition: left 0.2s ease-out;
 }
 
 img.pf-logo:hover {

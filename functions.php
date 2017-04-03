@@ -432,15 +432,35 @@ add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 // add_action('wp_enqueue_scripts', 'google_fonts');
 
 
-function spitup_logo () {
-    $food = '<a href="' .  esc_url( home_url( '/' ) ) . '" rel="home">';
-    $food .= '<img src="' . get_header_image() . '"'
-          . ' srcset="' .  esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id ) ) . '"'
-          . ' width="' .  esc_attr( get_custom_header()->width ) . '"'
-          . ' height="' .  esc_attr( get_custom_header()->height ) . '"'
-          . ' alt="' .  esc_attr( get_bloginfo( 'name', 'display' ) ) . '">';
-    $food .= '</a>';
+function spitup_logo ($type) {
+
+
+
+
+    if ($type === 'image') {
+        $food = '<a href="' .  esc_url( home_url( '/' ) ) . '" rel="home">';
+        $food .= '<img src="' . get_header_image() . '"'
+              . ' srcset="' .  esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id ) ) . '"'
+              . ' width="' .  esc_attr( get_custom_header()->width ) . '"'
+              . ' height="' .  esc_attr( get_custom_header()->height ) . '"'
+              . ' alt="' .  esc_attr( get_bloginfo( 'name', 'display' ) ) . '">';
+
+        $food .= '</a>';
+
+    }
+
+    else if ($type === 'text') {
+        $food = '<a href="' .  esc_url( home_url( '/' ) ) . '" rel="home">';
+        $food .= '<h1 class="dm-text-logo">data matters</h1>'
+
+              . '</a>'
+              . '<h2 class="dm-subtitle">a publication from <a href="http://www.newschool.edu/center-for-data-arts/" target="_blank">the center for data arts</a></h2>';
+
+    }
+
 
     // $food = "<p>balls</p>";
     return $food;
 }
+
+wp_enqueue_script('sam-typekit', get_template_directory_uri() . '/assets/js/typekit.js');
