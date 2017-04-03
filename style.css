@@ -1761,9 +1761,16 @@ h2.dm-subtitle a:hover {
   color: rgb(0,95,255);
 }
 
-.nothome_logo {
-  max-width: 500px;
+.nothome_logo h1.dm-text-logo{
+  font-size:4rem;
 }
+
+.nothome_logo h2.dm-subtitle {
+  font-size: 1rem;
+  padding-top: 0;
+  margin-top: -1.5rem;
+}
+
 
 /**
  * 11.2 - Posts and pages

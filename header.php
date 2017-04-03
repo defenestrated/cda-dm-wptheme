@@ -53,7 +53,7 @@
 
 					                  <?php else : ?>
                                 <div class ="nothome_logo">
-                                    <?php echo spitup_logo() ?>
+                                    <?php echo spitup_logo('text') ?>
                                 </div>
 						                    <!-- <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p> -->
 					                  <?php endif;
