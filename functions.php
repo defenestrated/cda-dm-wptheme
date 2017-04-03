@@ -463,4 +463,8 @@ function spitup_logo ($type) {
     return $food;
 }
 
-wp_enqueue_script('sam-typekit', get_template_directory_uri() . '/assets/js/typekit.js');
+function sam_scripts {
+    wp_enqueue_script('sam-typekit', get_template_directory_uri() . '/assets/js/typekit.js');
+}
+
+add_action( 'wp_enqueue_scripts', 'sam_scripts' );
