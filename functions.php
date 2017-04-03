@@ -463,7 +463,7 @@ function spitup_logo ($type) {
     return $food;
 }
 
-function sam_scripts {
+function sam_scripts() {
     wp_enqueue_script('sam-typekit', get_template_directory_uri() . '/assets/js/typekit.js');
 }
 
