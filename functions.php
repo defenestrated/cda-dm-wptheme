@@ -417,6 +417,7 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	$args['smallest'] = 1;
 	$args['unit'] = 'em';
 	return $args;
+
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 
