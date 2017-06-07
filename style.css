@@ -1600,7 +1600,7 @@ blockquote:after,
  */
 
 .site-header {
-	padding: 2.625em 7.6923%;
+	padding: 1.5em 7.6923% 2.625em 7.6923%;
 	padding-bottom: 2em;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 4em;
@@ -1632,7 +1632,7 @@ header#masthead {}
 
 .site-branding.home {
   margin-top: 0px;
-  margin-bottom: 5.25em;
+  /* margin-bottom: 5.25em; */
 }
 
 .custom-logo-link {
@@ -1671,6 +1671,12 @@ header#masthead {}
   letter-spacing: 0.1em;
 
 }
+
+.site-branding h2 {
+  line-height: 1em;
+  /* padding-bottom: 1em; */
+}
+
 .site-description {
 	color: #686868;
 	display: none;
@@ -1737,8 +1743,8 @@ header#masthead {}
 h1.dm-text-logo {
   font-family: "roboto";
   font-weight: 100;
-  font-size: 8rem;
-  line-height: 7rem;
+  font-size: 5rem;
+  line-height: 4rem;
   color: black;
   text-transform: uppercase;
   margin-left: -0.1em;
@@ -3122,6 +3128,11 @@ p > video {
 		padding-left: 4.5455%;
 	}
 
+  .site-header h1 {
+    font-size: 8rem;
+    line-height: 7rem;
+  }
+
 	.site-header-main {
 		-webkit-align-items: flex-start;
 		-ms-flex-align: start;
@@ -3560,7 +3571,7 @@ p > video {
 	}
 
 	.site-header {
-		padding: 5.25em 4.5455%;
+		padding: 3.5em 4.5455% 5.25em 4.5455%;
 	}
 
 	.site-branding,
