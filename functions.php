@@ -1,6 +1,4 @@
 <?php
-update_option( 'siteurl', 'http://data-matters.nyc/wordpress/' );
-update_option( 'home', 'http://data-matters.nyc/wordpress/' );
 /**
 * Twenty Sixteen functions and definitions
 *
