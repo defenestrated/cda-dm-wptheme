@@ -51,6 +51,11 @@
             <span class="cda-link">a project by <a href="http://www.newschool.edu/center-for-data-arts/" target="_blank">the center for data arts</a></span>
 				    <!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' ); ?></a> -->
             <span class="footer-sponsorship">supported by <a href="http://pressforward.org/" target="_blank">PressForward</a></span>
+
+            <div class="foot-laces">
+                <span>copyright © 2017 <a href="http://www.newschool.edu/">The New School</a></span>
+                <a target="_blank" href="http://www.newschool.edu/about/privacy-policy/">privacy policy</a>
+            </div> <!-- foot-laces -->
             <div class="foot-sole">
                 <a href="http://www.newschool.edu/center-for-data-arts/" target="_blank"><img src=" <?php echo get_template_directory_uri() ?>/assets/cda-logo-v-square-200px.gif" class="footlogos cda-logo"></a>
                 <a href="http://www.newschool.edu/" target="_blank"><img src=" <?php echo get_template_directory_uri() ?>/assets/tns-logo-h-2x.png" class="footlogos tns-logo"></a>
